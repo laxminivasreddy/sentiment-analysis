@@ -6,6 +6,7 @@ from nltk.corpus import stopwords
 
 
 nltk.download("stopwords")
+stop_words = set(stopwords.words('english'))
 
 #Load the model and Vectorizer
 model = joblib.load("sentiment_analysis_model.pkl")
